@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <meta name="description" content="" />
+        <title>Create Account</title>
+        <!-- Bootstrap core CSS -->
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+            integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+            crossorigin="anonymous"
+        />
+        <link href="../../stylesheet.css" rel="stylesheet" />
+        <script src="../../createAccountJS.js"></script>
+    </head>
+    <body>
+        <br><br><br><br>
+        <div class="container">
+            <div class="row justify-content-center">
+                <h1>Create Account</h1>
+            </div>
+            <br><br>
+            <form action="/createAccount/newuser" method="post">
+                <div class="form-group row justify-content-center">
+                    <div class="col-3">
+                        <input
+                            type="text"
+                            class="form-control"
+                            name="firstName"
+                            id="firstName"
+                            placeholder="Enter First Name"
+                            required
+                        />
+                    </div>
+                    <div class="col-5">
+                        <input
+                            type="text"
+                            class="form-control"
+                            name="lastName"
+                            id="lastName"
+                            placeholder="Enter Last Name"
+                        />
+                    </div>
+                </div>
+                <div class="form-group row justify-content-center">
+                    <div class="col-8">
+                        <input
+                            type="email"
+                            class="form-control"
+                            name="email"
+                            id="email"
+                            placeholder="Enter Email"
+                            oninput="checkEmail()"
+                            required
+                        />
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-8">
+                        <p id="validEmailMsg" style="display:none; color:red;">Must be a valid .edu email!</p>
+                    </div>
+                </div>
+                <div class="form-group row justify-content-center">
+                    <div class="col-8">
+                        <input
+                            type="password"
+                            class="form-control"
+                            name="password"
+                            id="password"
+                            placeholder="Enter Password"
+                            oninput="checkPassword()"
+                            required
+                        />
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-8">
+                        <p id="passwordCapital" style="display:none; color:red;">Must have uppercase letter!</p>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-8">
+                        <p id="passwordLetter" style="display:none; color:red;">Must have lowercase letter!</p>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-8">
+                        <p id="passwordNumber" style="display:none; color:red;">Must have number!</p>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-8">
+                        <p id="passwordLength" style="display:none; color:red;">Must be minimum 8 characters long!</p>
+                    </div>
+                </div>
+                <div class="form-group row justify-content-center">
+                    <div class="col-8">
+                        <input
+                            type="password"
+                            class="form-control"
+                            name="confirmPassword"
+                            id="confirmPassword"
+                            placeholder="Confirm Password"
+                            oninput="checkConfirmPassword()"
+                            required
+                        />
+                    </div>
+                </div>
+                <div class="form-group row justify-content-center">
+                    <div class="col-8">
+                        <p id="confirmPasswordMessage" style="display:none; color:red;">Must match password!</p>
+                    </div>
+                </div>
+                <div class="form-group row justify-content-center">
+                    <div class="col-3">
+                        <input
+                            type="submit"
+                            value="Create"
+                            class="btn btn-primary btn-block"
+                            id="button"
+                            disabled
+                        />
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="footer" id="footer">
+            <p>&copy; 2020-2021</p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,15 @@
+MEETING: 9/20/2021
+Moved milestone brainstorming to milestone document
+APP DESCRIPTION BRAINSTORMING
+Student Calendar
+Calendar marking assignments 
+Class time 
+Notification/Reminder system 
+Search for classmates 
+Group chat function 
+Personalized Group chats 
+Meeting Invites
+Updated Jira sprint to match the project 
+Created use case diagram for 2 student actors and a database 
+Created full project description in paragraph format 
+

@@ -1,0 +1,62 @@
+
+body { 
+  background-color: rgba(119,194,248,1);
+  position: relative;
+  width: 1440px;
+  height: 1024px;
+  margin: auto;
+  
+}
+a {
+  color: #ffffff;
+  text-decoration: none;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  background-color: transparent;
+  }
+  .rectangleMain {
+    position: absolute;
+    width: 1173px;
+    height: 692px;
+    left: 133px;
+    top: 227px; 
+   
+    background-color: #EFEFEF;
+  }
+  .rectangle-2{
+    position: absolute;
+    width: 234px;
+    height: 34px;
+    left: 281px;
+    top: 104px;
+
+    background: #EFEFEF;
+    box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.25);
+  }
+  .rectangle-3{
+    position: absolute;
+    width: 234px;
+    height: 35px;
+    left: 281px;
+    top: 169px;
+
+    background: #EFEFEF;
+    box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.25);
+  }
+  .profileContent{
+    position: relative;
+    margin: auto;
+    width: 1173px;
+    height: 692px;
+    left: 133px;
+    top: 227px; 
+  }
+
+  .profilePicDefault{
+    position: absolute;
+    width: 134px;
+    height: 134px;
+    left: 133px;
+    top: 80px;
+  }
+  
+  
